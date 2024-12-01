@@ -11,6 +11,7 @@
     <div class="background-logo">
       <div class="logo">
         <img src="assets/odin-logo.png" alt="odin-logo" />
+        <span class="odin-text">ODIN</span>
       </div>
       <!-- <footer>photo by masood aslami on Unsplash</footer> -->
       <p>
@@ -29,8 +30,50 @@
         pariatur quae corrupti exercitationem nam in, et repudiandae vitae,
         saepe minus natus id voluptatibus unde magni. Error labore sunt rem.
       </p>
-      <form></form>
-      <div class="log-in"></div>
+
+      <div class="form">
+        <form>
+          <legend>Let's do this</legend>
+
+          <!-- Form Row 1 -->
+          <div class="form-row">
+            <div class="input-container">
+              <label for="firstName">First Name</label>
+              <input id="firstName" type="text" />
+            </div>
+            <div class="input-container">
+              <label for="lastName">Last Name</label>
+              <input id="lastName" type="text" />
+            </div>
+          </div>
+
+          <!-- Form Row 2 -->
+          <div class="form-row">
+            <div class="input-container">
+              <label for="email">Email</label>
+              <input id="email" type="email" />
+            </div>
+            <div class="input-container">
+              <label for="phoneNumber">Phone Number</label>
+              <input id="phoneNumber" type="tel" />
+            </div>
+          </div>
+
+          <!-- Form Row 3 -->
+          <div class="form-row">
+            <div class="input-container">
+              <label for="password">Password</label>
+              <input id="password" type="password" />
+            </div>
+            <div class="input-container">
+              <label for="confirmPassword">Confirm Password</label>
+              <input id="confirmPassword" type="password" />
+            </div>
+          </div>
+        </form>
+      </div>
+      <button type="submit">Create an account</button>
+      <div class="log-in"> already have an account? <a href=""">login</a></div>
     </div>
   </body>
 </html>
