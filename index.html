@@ -30,20 +30,31 @@
         pariatur quae corrupti exercitationem nam in, et repudiandae vitae,
         saepe minus natus id voluptatibus unde magni. Error labore sunt rem.
       </p>
+      <form action="your-submit-endpoint" method="POST">
+        <!-- Add action and method -->
 
-      <div class="form">
-        <form>
+        <div class="form">
           <legend>Let's do this</legend>
 
           <!-- Form Row 1 -->
           <div class="form-row">
             <div class="input-container">
               <label for="firstName">First Name</label>
-              <input id="firstName" type="text" />
+              <input
+                id="firstName"
+                type="text"
+                required
+                placeholder="write your first name"
+              />
             </div>
             <div class="input-container">
               <label for="lastName">Last Name</label>
-              <input id="lastName" type="text" />
+              <input
+                id="lastName"
+                type="text"
+                required
+                placeholder="write your last name"
+              />
             </div>
           </div>
 
@@ -51,11 +62,16 @@
           <div class="form-row">
             <div class="input-container">
               <label for="email">Email</label>
-              <input id="email" type="email" />
+              <input id="email" type="email" required placeholder="email" />
             </div>
             <div class="input-container">
               <label for="phoneNumber">Phone Number</label>
-              <input id="phoneNumber" type="tel" />
+              <input
+                id="phoneNumber"
+                type="tel"
+                required
+                placeholder="phone number"
+              />
             </div>
           </div>
 
@@ -63,17 +79,29 @@
           <div class="form-row">
             <div class="input-container">
               <label for="password">Password</label>
-              <input id="password" type="password" />
+              <input
+                id="password"
+                type="password"
+                required
+                placeholder="password"
+              />
             </div>
             <div class="input-container">
               <label for="confirmPassword">Confirm Password</label>
-              <input id="confirmPassword" type="password" />
+              <input
+                id="confirmPassword"
+                type="password"
+                required
+                placeholder="confirm your password"
+              />
             </div>
           </div>
-        </form>
-      </div>
-      <button type="submit">Create an account</button>
-      <div class="log-in"> already have an account? <a href=""">login</a></div>
+        </div>
+        <!-- Submit Button (inside the form) -->
+        <button type="submit">Create an account</button>
+      </form>
+
+      <div class="log-in">Already have an account? <a href="">Login</a></div>
     </div>
   </body>
 </html>

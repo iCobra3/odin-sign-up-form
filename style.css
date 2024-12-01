@@ -81,7 +81,7 @@ body {
 .brief-form p {
   font-size: 1rem;
   line-height: 1.5;
-  margin: 4em 0.3em 3em 0px;
+  margin: 2.5em 0em 3em 0.9em;
 }
 
 .form {
@@ -93,11 +93,26 @@ body {
   align-items: center;
   gap: 10px;
 }
+input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+}
 
+#password:invalid {
+  border: 1px solid red;
+}
+input:focus {
+  border: 2px solid blue; /* Blue border when the input is focused */
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.2); /* Subtle blue box-shadow when focused */
+  outline: none; /* Removes the default focus outline */
+}
 .form-row {
   display: flex;
   justify-content: space-between;
-  margin: 1em 1em;
+  margin: 0.5em 1em;
 }
 .input-container {
   display: flex;
@@ -111,11 +126,11 @@ button {
   width: 11em;
   height: 3em;
   color: white;
-  background-color: rgba(113, 242, 0, 0.8);
+  background-color: #596d48;
   border-radius: 10px;
   border: none;
   font-size: 0.8rem;
-  padding: 0.5em 1em;
+  padding: 0em 1em;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin: 1em;
 }
@@ -126,5 +141,5 @@ button {
 
 .log-in a {
   text-decoration: none;
-  color: rgba(113, 242, 0, 0.8);
+  color: #596d48;
 }
